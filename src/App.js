@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import Header from './Components/Header/Header';
+import Routes from './routes';
+import Footer from './Components/'
 
 class App extends Component {
   render() {
