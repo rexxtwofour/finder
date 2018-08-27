@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import { withRouter } from 'react-router';
 import Header from './Components/Header/Header';
-import Routes from './routes';
 import Footer from './Components/Footer/Footer';
 
 class App extends Component {
@@ -10,8 +9,22 @@ class App extends Component {
     return (
       <div className="App">
         {/* <Header/> */}
-        <Routes/>
+      
         {/* <Footer/> */}
+
+        <Switch>
+        <Route exact path="/" component={MatchFinder}/>
+        <Route path="/Registration" component={Registration}/>
+        <Route path="/UserProfile" component={UserProfile}/>
+        <Route path="/UserSettings" component={UserSettings}/>
+        <Route path="/MatchList" component={MatchList}/>
+        <Route path="/Settings" component={Settings}/>
+        <Route path="/JobMap" component={JobMap}/>
+        <Route path="/Messages" component={Messages}/>
+        <Route path="/ChatWindow" component={ChatWindow}/>
+        </Switch>
+
+       
       </div>
     );
   }
