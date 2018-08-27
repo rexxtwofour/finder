@@ -1,13 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-<<<<<<< HEAD
-
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-=======
+import './index.css';
+import {BrowserRouter as Router} from 'react-router-dom';
 import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
 
@@ -17,9 +12,10 @@ const client = new ApolloClient({
 
 ReactDOM.render(
     <ApolloProvider client={client}>
+       <Router>
         <App />
+        </Router>
     </ ApolloProvider>
 , document.getElementById('root')
 );
 
->>>>>>> c3bb7f68b0b6a000fc3b76c5a0fe7d139a5243c7
