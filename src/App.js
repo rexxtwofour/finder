@@ -3,6 +3,17 @@ import './App.css';
 import { withRouter } from 'react-router';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
+import { Route, Switch } from 'react-router-dom';
+import MatchFinder from './Components/MatchFinder/MatchFinder';
+import Registration from './Components/Registration/Registration';
+import UserProfile from './Components/UserProfile/UserProfile';
+import UserSettings from './Components/UserSettings/UserSettings';
+import MatchList from './Components/MatchList/MatchList';
+import Settings from './Components/Settings/Settings';
+import JobMap from './Components/JobMap/JobMap';
+import Messages from './Components/Messages/Messages';
+import ChatWindow from './Components/ChatWindow/ChatWindow';
+
 
 class App extends Component {
   render() {
