@@ -13,15 +13,15 @@ import ChatWindow from './Components/ChatWindow/ChatWindow';
 export default class Routes extends Component {
     render() {
         return <Switch>
-        <Route  exact path="/" component={MatchFinder}/>
-        <Route  path="/Registration" component={Registration}/>
-        <Route  path="/UserProfile" component={UserProfile}/>
-        <Route  path="/UserSettings" component={UserSettings}/>
-        <Route  path="/MatchList" component={MatchList}/>
-        <Route  path="/Settings" component={Settings}/>
-        <Route  path="/JobMap" component={JobMap}/>
-        <Route  path="/Messages" component={Messages}/>
-        <Route  path="/ChatWindow" component={ChatWindow}/>
+        <Route exact path="/" component={MatchFinder}/>
+        <Route path="/Registration" component={Registration}/>
+        <Route path="/UserProfile" component={UserProfile}/>
+        <Route path="/UserSettings" component={UserSettings}/>
+        <Route path="/MatchList" component={MatchList}/>
+        <Route path="/Settings" component={Settings}/>
+        <Route path="/JobMap" component={JobMap}/>
+        <Route path="/Messages" component={Messages}/>
+        <Route path="/ChatWindow" component={ChatWindow}/>
         </Switch>
     }
 }
